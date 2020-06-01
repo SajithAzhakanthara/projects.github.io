@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+
+  
+
+   
+  </head>
+  <body>
+     
+        <a-scene>
+          <!-- assets -->
+          <a-assets>            
+             <a-asset-item id="castle-m" src="assets/scene.gltf"></a-asset-item>
+          </a-assets>
+
+          <!-- camera -->
+          <a-entity position="-3 0 50">
+            <a-camera></a-camera>
+          </a-entity>
+
+
+
+          <!-- modet call -->
+         <a-entity gltf-model="#castle-m"></a-entity>
+
+        </a-scene>
+    
+  </body>
+</html>
